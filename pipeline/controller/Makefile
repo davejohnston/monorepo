@@ -16,4 +16,4 @@ deploy:
 	@echo "Deploy $(COMPONENT)"
 
 image:
-	@docker build --rm -t davejohnston/$(COMPONENT):latest -f Dockerfile .
+	@docker build --rm $(DOCKER_OPTS) -t davejohnston/$(COMPONENT):latest -f Dockerfile .
