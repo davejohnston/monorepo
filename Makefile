@@ -2,6 +2,7 @@ export MAKEFLAGS="-j 4"
 
 COMPONENTS := ui database pipeline workstation
 
+# Run make all to build everything
 all: $(COMPONENTS)
 
 build: $(addsuffix -build,$(COMPONENTS))
