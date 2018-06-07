@@ -57,7 +57,6 @@ jobs:
     language: generic
     deploy:
       provider: script
-      language: generic
       script: bash build/publish.sh
       skip_cleanup: true
       on:
