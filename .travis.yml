@@ -53,6 +53,7 @@ jobs:
       - |
         make all
 
+  - stage: deploy
     deploy:
       provider: script
       language: generic
