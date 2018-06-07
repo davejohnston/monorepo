@@ -54,6 +54,7 @@ jobs:
         make all
 
   - stage: deploy
+    language: generic
     deploy:
       provider: script
       language: generic
